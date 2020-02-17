@@ -1,15 +1,78 @@
 // Iteration #1: Find the maximum
+function maxOfTwoNumbers (a,b) {
+  if (a > b)
+  { return a;
+  } else return b;
+}
 
 // Iteration #2: Find longest word
+function findLongestWord(word) {
+  let longest = '';
+  if (word <= 0) {
+    return null;
+  }
+for (let i = 0; i < word.length; i++) {
+  if (word[i].length > longest.length) 
+longest = word[i];}
+return longest;
+}
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
 // Iteration #3: Calculate the sum
-
+function sumNumbers(numbers) {
+  let sum = 0;
+    if (numbers.length == 0){
+    return 0;
+  } 
+  for (i=0; i <numbers.length; i++) {
+    if (numbers.length == 1) {
+    return sum += numbers[i];
+  } else if (numbers[i] === 0) {
+    return 0;
+  }
+  for (i=0; i < numbers.length; ++i) {
+    sum += numbers[i]; // add each element in an array to total
+  } return sum; // return sum of elements in array
+}
+}
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+function sum (mixedArr) {
+  let number = 0;
+  if (mixedArr.length == 0){
+    return 0;
+  }
+  for (let i=0; i < mixedArr.length; i++) {
+    if (typeof mixedArr[i] == "string") {
+      number += mixedArr[i].length}
+    else if (typeof mixedArr[i] == "boolean") {
+      number += Number(mixedArr[i])
+    } else {
+      number += mixedArr[i];
+    }
+    } return number;
+    }
+// Alternative
+// function sumNumbers (arrayOfNumbers) {
+// let number = 0;
+// for (let i=0; i < arrayOfNumbers.length; i++) {
+  // number = number + arrayOfNumbers[i]; 
+// } return number;
+// }
+const number = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
-const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+// const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
+function averageNumbers (number) {
+  var sum = 0;
+  for(var i = 0; i < array.length;i++){
+      sum += array[i];
+  }
+  return sum / array.length;
+}
+
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
